@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#MainWindow {
+	background-color: #F2F4F4;
+
+}
+#widget  {
+    border-radius: 10px;
+}
+#widget_2 {
+    border: 2px solid #F2F4F4; 
+    border-radius: 10px;
+}
+#widget_3 {
+     background-color: #E5E8E8;
+    border: 2px solid #F2F4F4; 
+    border-radius: 10px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>0</y>
+      <width>251</width>
+      <height>980</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #E5E8E8;</string>
+    </property>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>300</y>
+       <width>230</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+    background: #FFFFFF;
+    background-color:#CCD1D1;
+	font: 25 11pt &quot;URW Bookman&quot;;
+    border: 2px solid #000000; 
+    border-radius: 10px; 
+    font-size:20px;
+    color: #19060f;
+
+}
+QPushButton:hover{
+     border: 2px solid #E5E8E8; 
+     background: #FFFFFF;
+      background-color:#424949;
+      color: #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>Import image</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>250</width>
+       <height>250</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/newPrefix/logo1.png);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>340</y>
+       <width>230</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+    background: #FFFFFF;
+    background-color:#CCD1D1;
+	font: 25 11pt &quot;URW Bookman&quot;;
+    border: 2px solid #000000; 
+    border-radius: 10px; 
+    font-size:20px;
+    color: #19060f;
+
+}
+QPushButton:hover{
+     border: 2px solid #E5E8E8; 
+     background: #FFFFFF;
+      background-color:#424949;
+      color: #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>Histogramme</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>380</y>
+       <width>230</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+    background: #FFFFFF;
+    background-color:#CCD1D1;
+	font: 25 11pt &quot;URW Bookman&quot;;
+    border: 2px solid #000000; 
+    border-radius: 10px; 
+    font-size:20px;
+    color: #19060f;
+
+}
+QPushButton:hover{
+     border: 2px solid #E5E8E8; 
+     background: #FFFFFF;
+      background-color:#424949;
+      color: #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>Histogramme cumulé</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>420</y>
+       <width>230</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+    background: #FFFFFF;
+    background-color:#CCD1D1;
+	font: 25 11pt &quot;URW Bookman&quot;;
+    border: 2px solid #000000; 
+    border-radius: 10px; 
+    font-size:20px;
+    color: #19060f;
+
+}
+QPushButton:hover{
+     border: 2px solid #E5E8E8; 
+     background: #FFFFFF;
+      background-color:#424949;
+      color: #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>Histogramme normalisé</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>460</y>
+       <width>230</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+    background: #FFFFFF;
+    background-color:#CCD1D1;
+	font: 25 11pt &quot;URW Bookman&quot;;
+    border: 2px solid #000000; 
+    border-radius: 10px; 
+    font-size:20px;
+    color: #19060f;
+
+}
+QPushButton:hover{
+     border: 2px solid #E5E8E8; 
+     background: #FFFFFF;
+      background-color:#424949;
+      color: #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>L'inversion d'histogram</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>500</y>
+       <width>230</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+    background: #FFFFFF;
+    background-color:#CCD1D1;
+	font: 25 11pt &quot;URW Bookman&quot;;
+    border: 2px solid #000000; 
+    border-radius: 10px; 
+    font-size:20px;
+    color: #19060f;
+
+}
+QPushButton:hover{
+     border: 2px solid #E5E8E8; 
+     background: #FFFFFF;
+      background-color:#424949;
+      color: #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>Segmentation</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>540</y>
+       <width>67</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+font: 75 oblique 20pt &quot;Tlwg Typist&quot;;</string>
+     </property>
+     <property name="text">
+      <string>MIN</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>540</y>
+       <width>67</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+font: 75 oblique 20pt &quot;Tlwg Typist&quot;;</string>
+     </property>
+     <property name="text">
+      <string>MAX</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>560</y>
+       <width>81</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+    background: #FFFFFF;
+   background-color:#FFFFFF;
+    border: 2px solid #000000; 
+    border-radius: 10px; 
+    font-family: ubuntu;
+    font-size:20px;
+    color: #19060f;
+
+}
+QLineEdit:hover{
+     border: 2px solid #9c9c9c; 
+     background: #FFFFFF;
+}</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_3">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>670</y>
+       <width>81</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+    background: #FFFFFF;
+   background-color:#FFFFFF;
+    border: 2px solid #000000; 
+    border-radius: 10px; 
+    font-family: ubuntu;
+    font-size:20px;
+    color: #19060f;
+
+}
+QLineEdit:hover{
+     border: 2px solid #9c9c9c; 
+     background: #FFFFFF;
+}</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>590</y>
+       <width>230</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+    background: #FFFFFF;
+    background-color:#CCD1D1;
+	font: 25 11pt &quot;URW Bookman&quot;;
+    border: 2px solid #000000; 
+    border-radius: 10px; 
+    font-size:20px;
+    color: #19060f;
+
+}
+QPushButton:hover{
+     border: 2px solid #E5E8E8; 
+     background: #FFFFFF;
+      background-color:#424949;
+      color: #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>Egalisation</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>630</y>
+       <width>230</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+    background: #FFFFFF;
+    background-color:#CCD1D1;
+	font: 25 11pt &quot;URW Bookman&quot;;
+    border: 2px solid #000000; 
+    border-radius: 10px; 
+    font-size:20px;
+    color: #19060f;
+
+}
+QPushButton:hover{
+     border: 2px solid #E5E8E8; 
+     background: #FFFFFF;
+      background-color:#424949;
+      color: #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>Expansion dynamique</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>670</y>
+       <width>141</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>URW Bookman</family>
+       <pointsize>-1</pointsize>
+       <weight>3</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+    background: #FFFFFF;
+    background-color:#CCD1D1;
+	font: 25 11pt &quot;URW Bookman&quot;;
+    border: 2px solid #000000; 
+    border-radius: 10px; 
+    font-size:20px;
+    color: #19060f;
+
+}
+QPushButton:hover{
+     border: 2px solid #E5E8E8; 
+     background: #FFFFFF;
+      background-color:#424949;
+      color: #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>Translation</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>560</y>
+       <width>81</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+    background: #FFFFFF;
+   background-color:#FFFFFF;
+    border: 2px solid #000000; 
+    border-radius: 10px; 
+    font-family: ubuntu;
+    font-size:20px;
+    color: #19060f;
+
+}
+QLineEdit:hover{
+     border: 2px solid #9c9c9c; 
+     background: #FFFFFF;
+}</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_10">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>710</y>
+       <width>230</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+    background: #FFFFFF;
+    background-color:#CCD1D1;
+	font: 25 11pt &quot;URW Bookman&quot;;
+    border: 2px solid #000000; 
+    border-radius: 10px; 
+    font-size:20px;
+    color: #19060f;
+
+}
+QPushButton:hover{
+     border: 2px solid #E5E8E8; 
+     background: #FFFFFF;
+      background-color:#424949;
+      color: #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>Quantification</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_11">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>750</y>
+       <width>230</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+    background: #FFFFFF;
+    background-color:#CCD1D1;
+	font: 25 11pt &quot;URW Bookman&quot;;
+    border: 2px solid #000000; 
+    border-radius: 10px; 
+    font-size:20px;
+    color: #19060f;
+
+}
+QPushButton:hover{
+     border: 2px solid #E5E8E8; 
+     background: #FFFFFF;
+      background-color:#424949;
+      color: #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>Median</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_12">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>790</y>
+       <width>230</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+    background: #FFFFFF;
+    background-color:#CCD1D1;
+	font: 25 11pt &quot;URW Bookman&quot;;
+    border: 2px solid #000000; 
+    border-radius: 10px; 
+    font-size:20px;
+    color: #19060f;
+
+}
+QPushButton:hover{
+     border: 2px solid #E5E8E8; 
+     background: #FFFFFF;
+      background-color:#424949;
+      color: #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>Uniforme</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_13">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>870</y>
+       <width>131</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+    background: #FFFFFF;
+    background-color:#CCD1D1;
+	font: 25 11pt &quot;URW Bookman&quot;;
+    border: 2px solid #000000; 
+    border-radius: 10px; 
+    font-size:20px;
+    color: #19060f;
+
+}
+QPushButton:hover{
+     border: 2px solid #E5E8E8; 
+     background: #FFFFFF;
+      background-color:#424949;
+      color: #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>Import vedio</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_14">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>870</y>
+       <width>91</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+    background: #FFFFFF;
+    background-color:#CCD1D1;
+	font: 25 11pt &quot;URW Bookman&quot;;
+    border: 2px solid #000000; 
+    border-radius: 10px; 
+    font-size:20px;
+    color: #19060f;
+
+}
+QPushButton:hover{
+     border: 2px solid #E5E8E8; 
+     background: #FFFFFF;
+      background-color:#424949;
+      color: #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>Capteur</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_15">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>830</y>
+       <width>230</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+    background: #FFFFFF;
+    background-color:#CCD1D1;
+	font: 25 11pt &quot;URW Bookman&quot;;
+    border: 2px solid #000000; 
+    border-radius: 10px; 
+    font-size:20px;
+    color: #19060f;
+
+}
+QPushButton:hover{
+     border: 2px solid #E5E8E8; 
+     background: #FFFFFF;
+      background-color:#424949;
+      color: #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>Etiquetage</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_16">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>910</y>
+       <width>230</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+    background: #FFFFFF;
+    background-color:#CCD1D1;
+	font: 25 11pt &quot;URW Bookman&quot;;
+    border: 2px solid #000000; 
+    border-radius: 10px; 
+    font-size:20px;
+    color: #19060f;
+
+}
+QPushButton:hover{
+     border: 2px solid #E5E8E8; 
+     background: #FFFFFF;
+      background-color:#424949;
+      color: #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>261</x>
+      <y>0</y>
+      <width>1650</width>
+      <height>980</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+#widget {
+	background-color: #E5E8E8;
+
+}
+#frame  {
+   
+    border-radius: 20px;
+}
+
+#frame_2  {
+   
+    border-radius: 20px;
+}
+#frame_3  {
+   
+    border-radius: 20px;
+}
+#frame_4  {
+   
+    border-radius: 20px;
+}
+#frame_5  {
+   
+    border-radius: 20px;
+}
+#frame_6  {
+   
+    border-radius: 20px;
+}</string>
+    </property>
+    <widget class="QFrame" name="frame">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>521</width>
+       <height>470</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_2">
+     <property name="geometry">
+      <rect>
+       <x>565</x>
+       <y>20</y>
+       <width>521</width>
+       <height>470</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_3">
+     <property name="geometry">
+      <rect>
+       <x>1110</x>
+       <y>20</y>
+       <width>521</width>
+       <height>470</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_4">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>500</y>
+       <width>521</width>
+       <height>470</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_5">
+     <property name="geometry">
+      <rect>
+       <x>565</x>
+       <y>500</y>
+       <width>521</width>
+       <height>470</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_6">
+     <property name="geometry">
+      <rect>
+       <x>1110</x>
+       <y>500</y>
+       <width>521</width>
+       <height>470</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="logo.qrc"/>
+ </resources>
+ <connections/>
+</ui>
